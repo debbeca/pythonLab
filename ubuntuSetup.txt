@@ -1,2 +1,3 @@
+  sudo apt-get install python-numpy python-pandas 
+  sudo apt-get install python-matplotlib
   sudo apt-get install python-sklearn
-  
