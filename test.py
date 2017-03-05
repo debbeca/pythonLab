@@ -8,14 +8,9 @@ df = pd.read_csv('data.csv')
 
 df.head()
 df.describe()
-X = f.ix[:,0:5];
-
-
+var_mod = ['CI','D','PR']
 le = LabelEncoder()
+df['CI'] = le.fit_transform(df['CI'])
+df['D'] = le.fit_transform(df['D'])
+df['PR']= le.fit_transform(df['PR'])
 
-Y = f.ix[:,5];
-Y_encoded = le.fit_transform(Y)
-y_train = le.fit_transform(X['CI'][:-1])
-
-model = tree.DecisionTreeClassifier(criterion='gini')
-model.fit(X_encoded, y_train)
