@@ -4,6 +4,8 @@ import matplotlib
 from sklearn import tree
 from sklearn.tree import export_graphviz
 from sklearn.preprocessing import LabelEncoder
+import matplotlib.pyplot as plt
+
 
 df = pd.read_csv('data.csv')
 
@@ -22,3 +24,4 @@ model = tree.DecisionTreeClassifier(criterion='gini')
 model.fit(training, decision)
 
 tree.export_graphviz(model, out_file='tree.png')
+plt.show()
