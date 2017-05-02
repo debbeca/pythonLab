@@ -2,3 +2,9 @@
   sudo apt-get install python-matplotlib
   sudo apt-get install python-sklearn
   sudo apt-get install xdot
+
+
+* install NLP python toolkit 
+-----------------
+sudo apt-get install python-nltk
+-----------------
